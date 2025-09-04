@@ -91,10 +91,10 @@ airline-ticketing-db/
 ---
 ## How to clone this repository
 
-# Clone the repository
+**Clone the repository**
 git clone https://github.com/JoseWongg/airline-ticketing-db.git
 
-# Navigate into the project folder
+**Navigate into the project folder**
 cd airline-ticketing-db
 
 ---
