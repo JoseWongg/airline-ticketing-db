@@ -36,24 +36,28 @@ It supports:
 
 ---
 
-## How to Run (order of scripts)
-1) `sql/create_tables.sql`
-2) `sql/insert_data.sql`
-3) `sql/views.sql`
-4) `sql/stored_procedures.sql`
-5) `sql/functions.sql`
-6) `sql/triggers.sql`
-7) `sql/queries.sql`  (sample checks / demo queries)
+## How to Use  
 
-> All scripts are standard T‑SQL. Open each file in SSMS and execute against a blank database (e.g., `AirlineTicketingDB`).
+1. Open **SQL Server Management Studio (SSMS)**.  
+2. Run the scripts in the following order from the `sql/` folder:  
+   1. `create_tables.sql` → defines schema and tables.  
+   2. `constraints.sql` → adds constraints (PK, FK, checks).  
+   3. `insert_data.sql` → populates sample data.  
+   4. `views.sql` → creates views.  
+   5. `stored_procedures.sql` → creates stored procedures.  
+   6. `functions.sql` → creates user-defined functions.  
+   7. `triggers.sql` → creates triggers.  
+   8. `security.sql` → configures roles, permissions, and test logins.  
+   9. `queries.sql` → includes test queries and examples.  
+
+   All scripts are standard T‑SQL. Open each file in SSMS and execute against a blank database (e.g., `AirlineTicketingDB`).
+   Alternatively, run **`all_in_one.sql`** to create and populate everything in one go.  
+
 
 ---
 
 ## Database Design
-The project follows a full lifecycle: **Conceptual → Logical → Physical**, including normalization (up to **3NF**), constraints, and security considerations.
-
-- **ER Diagram** (export yours from SSMS and replace this file):
-  - `docs/er_diagram.png`
+The project follows a full lifecycle: **Conceptual → Logical → Physical**, including normalisation (up to **3NF**), constraints, and security considerations.
 
 ---
 
@@ -62,15 +66,18 @@ The project follows a full lifecycle: **Conceptual → Logical → Physical**, i
 airline-ticketing-db/
 ├── README.md
 ├── sql/
+│   ├── all_in_one.sql
+│   ├── constraints.sql
 │   ├── create_tables.sql
-│   ├── insert_data.sql
-│   ├── views.sql
-│   ├── stored_procedures.sql
 │   ├── functions.sql
+│   ├── insert_data.sql
+│   ├── queries.sql
+│   ├── security.sql
+│   ├── stored_procedures.sql
 │   ├── triggers.sql
-│   └── queries.sql
+│   └── views.sql
+│ 
 └── docs/
-    ├── er_diagram.png
     └── airline_ticketing_report.pdf
 ```
 
@@ -78,9 +85,22 @@ airline-ticketing-db/
 
 ## Notes
 - The PDF report in `docs/` provides detailed design decisions, constraints, security, and backup guidance.
-- - The `sql/` folder contains both the original full script (`all_in_one.sql`) and split files (tables, inserts, views, procedures, functions, triggers, etc.) for clarity.
+- - The `sql/` folder contains the original full script (`all_in_one.sql`) and split files (tables, inserts, views, procedures, functions, triggers, etc.) for clarity.
 
 
+---
+## How to clone this repository
+
+# Clone the repository
+git clone https://github.com/JoseWongg/airline-ticketing-db.git
+
+# Navigate into the project folder
+cd airline-ticketing-db
+
+---
 
 ## Author
-**Jose Wong** · [LinkedIn](https://www.linkedin.com/in/jose-wongg) · [GitHub](https://github.com/JoseWongg)
+**Jose Wong** 
+Email: j.wong@mail.com
+LinkedIn:https://www.linkedin.com/in/jose-wongg
+GitHub:https://github.com/JoseWongg
