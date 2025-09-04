@@ -1,1 +1,0 @@
--- Paste CREATE VIEW statements here (e.g., View_EmployeeRevenuePerFlight).
