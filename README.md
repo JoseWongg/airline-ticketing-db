@@ -36,7 +36,7 @@ It supports:
 
 ---
 
-## 🚀 How to Run (order of scripts)
+## How to Run (order of scripts)
 1) `sql/create_tables.sql`
 2) `sql/insert_data.sql`
 3) `sql/views.sql`
@@ -79,6 +79,8 @@ airline-ticketing-db/
 ## Notes
 - The PDF report in `docs/` provides detailed design decisions, constraints, security, and backup guidance.
 - - The `sql/` folder contains both the original full script (`all_in_one.sql`) and split files (tables, inserts, views, procedures, functions, triggers, etc.) for clarity.
+
+
 
 ## Author
 **Jose Wong** · [LinkedIn](https://www.linkedin.com/in/jose-wongg) · [GitHub](https://github.com/JoseWongg)
