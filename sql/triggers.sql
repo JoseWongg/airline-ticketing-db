@@ -1,0 +1,1 @@
+-- Paste CREATE TRIGGER statements here (e.g., set seat status Reserved on ticket issue).
