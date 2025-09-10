@@ -99,8 +99,12 @@ cd airline-ticketing-db
 
 ---
 
-## Author
-**Jose Wong** 
-Email: j.wong@mail.com
-LinkedIn:https://www.linkedin.com/in/jose-wongg
-GitHub:https://github.com/JoseWongg
+
+## Authorship & Contact
+Developed by **Jose Wong**  
+j.wong@mail.com  
+https://www.linkedin.com/in/jose-wongg  
+https://github.com/JoseWongg  
+
+## License
+MIT — see the [LICENSE](LICENSE) file for details.
